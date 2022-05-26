@@ -1,0 +1,8 @@
+{
+   "todos":[
+       {"id":1,"value":"milk","isCompleted":false},
+       {"id":2,"value":"chocolate","isCompleted":false},
+       {"id":3,"value":"fruit","isCompleted":false}
+       
+   ] 
+}
