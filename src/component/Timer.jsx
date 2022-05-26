@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import TimeInput from "./TimeInput";
 import styles from "./timer.module.css"
 const Timer = () => {
@@ -41,6 +41,11 @@ const Timer = () => {
     timerid.current=null;
     setCount(0);
   };
+  useEffect(()=>{
+    return ()=>{
+      clearInterval(timerid.current);
+    } 
+  },[])
 
   return (
     <div>
